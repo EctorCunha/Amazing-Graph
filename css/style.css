@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5rem;
+}
+
+header h1 {
+  font-size: 3rem;
+  color: #D2872C;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style-type: none;
+  gap: 2.7vw;
+  font-size: clamp(20px, 2vw, 2vw);
+  color: #5a5a5a;
+}
+
+header .icon-menu {
+  display: none;
+}
+
+.chamada {
+  width: 45%;
+  margin-left: 10rem;
+}
+
+.chamada h1 {
+  font-size: clamp(44px, 5.86vw, 5.86vw);
+  color: #766F68;
+  margin-bottom: 3rem;
+  margin-top: 3.3rem;
+}
+
+.chamada p {
+  font-size: clamp(30px, 2.4vw, 2.4vw);
+  color: #766F68;
+  margin-bottom: 3rem;
+  width: 90%;
+}
+
+.chamada button {
+  width: 57%;
+  padding: 1.6rem;
+  border-radius: 20px;
+  border: none;
+  background-color: #D2872C;
+  color: white;
+  font-size: clamp(15px, 2.75vw, 2.75vw);
+}
+
+.ilustracao {
+  float: right;
+  margin-top: -34.6rem;
+  margin-bottom: 15rem;
+}
+
+.ilustracao img {
+  width: 59.9vw;
+}
+
+@media (max-width: 1797px) {
+  section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header {
+    margin-bottom: -10rem;
+  }
+  .ilustracao {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-item-align: center;
+        align-self: center;
+    margin-bottom: 1rem;
+    margin-top: 12rem;
+  }
+  .ilustracao img {
+    width: 65vw;
+  }
+  .chamada {
+    margin-left: -2rem;
+  }
+  .chamada button {
+    width: 65%;
+    padding: 1.2rem;
+    margin-bottom: 10rem;
+    border-radius: 15px;
+  }
+}
+
+@media (max-width: 932px) {
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: -12rem;
+  }
+  header h1 {
+    margin-bottom: 2rem;
+  }
+  .chamada {
+    margin-left: -2rem;
+  }
+  .chamada button {
+    width: 67%;
+    padding: 1rem;
+    border-radius: 12px;
+  }
+}
+
+@media (max-width: 689px) {
+  .chamada {
+    margin-left: .7rem;
+  }
+  .chamada h1 {
+    font-size: 6vw;
+  }
+  .chamada p {
+    font-size: 3.5vw;
+  }
+}
+
+@media (max-width: 375px) {
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  header h1 {
+    font-size: 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: -2rem;
+    margin-left: -3rem;
+  }
+  header ul {
+    display: none;
+  }
+  header .icon-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: -3.7rem;
+    margin-left: 8rem;
+    content: url(../assets/menu.svg);
+    width: 6vw;
+  }
+  .ilustracao {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-item-align: center;
+        align-self: center;
+    margin-bottom: 1rem;
+    margin-top: 8rem;
+  }
+  .ilustracao img {
+    width: 85vw;
+  }
+  .chamada {
+    width: 80vw;
+    margin-top: -2rem;
+  }
+  .chamada h1 {
+    font-size: 40px;
+  }
+  .chamada p {
+    font-size: 20px;
+    margin-top: -1rem;
+    width: 80vw;
+  }
+  .chamada button {
+    width: 78%;
+    padding: 1.1rem;
+    border-radius: 12px;
+    font-size: 20px;
+    margin-top: -1rem;
+    margin-bottom: 15rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
